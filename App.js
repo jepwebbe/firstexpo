@@ -5,6 +5,7 @@ import { DATA } from './Data';
 import deleteIcon from './assets/deleteIcon.png'
 import binIcon from './assets/binIcon.png'
 
+// Component der opsætter strukturen i listen
 const Item = ({ title, amount }) => (
   <View style={styles.item}>
     <Text style={styles.title}>{title}</Text>
@@ -18,6 +19,7 @@ const Item = ({ title, amount }) => (
 );
 
 export default function App() {
+  // funktion der renderer listens indhold i komponenten
   const renderItem = ({ item }) => (
     <Item title={item.title} amount={item.amount}></Item>
   );
